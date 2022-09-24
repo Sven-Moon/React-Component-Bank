@@ -1,0 +1,30 @@
+.modal
+  position: fixed
+  left: 0
+  top: 0
+  width: 100vw
+  height: 100vh
+
+  justify-content: center
+  align-items: center
+
+  .close__btn
+    position: absolute
+    top: 5%
+    right: 5%
+    background-color: #ffffff67
+    color: black
+
+  .modal.backdrop
+    background-color: rgba(0, 0, 0, .8)
+    z-index: $z-modal-backdrop
+    transition: opacity 1s linear
+
+  .img
+    width: 100%
+
+  > .container
+    max-width: 600px
+    width: 90%
+    height: auto
+    max-height: 90%
